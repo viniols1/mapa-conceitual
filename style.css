@@ -1,0 +1,126 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    overflow: hidden; 
+}
+
+h1 {
+    text-align: center;
+    color: #00aaff; 
+    margin-top: 30px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.map-container {
+    position: relative;
+    width: 90%;
+    height: 70vh;
+    margin: 40px auto;
+}
+
+.node {
+    position: absolute;
+    padding: 15px 25px;
+    background-color: #0d2a45;
+    border: 2px solid #00aaff; 
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 170, 255, 0.2);
+    animation: pulse 2s infinite ease-in-out;
+}
+
+.node:hover {
+    background-color: #00aaff;
+    color: #000000;
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 170, 255, 0.7);
+    animation-play-state: paused; 
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 10px rgba(0, 170, 255, 0.2); }
+    50% { box-shadow: 0 0 20px rgba(0, 170, 255, 0.5); }
+    100% { box-shadow: 0 0 10px rgba(0, 170, 255, 0.2); }
+}
+
+#genos { top: 0%; left: 45%; }
+#polis { top: 20%; left: 25%; }
+#civitas { top: 20%; left: 65%; }
+#nomos { top: 40%; left: 45%; }
+#otium { top: 60%; left: 25%; }
+#metropole { top: 60%; left: 65%; }
+#territorio { top: 80%; left: 35%; }
+#inteligentes { top: 80%; left: 55%; }
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); 
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #0a0a0a;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #00aaff;
+    box-shadow: 0 0 30px rgba(0, 170, 255, 0.5);
+    width: 90%;
+    max-width: 600px;
+    color: #eee;
+    z-index: 1001;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.close-btn {
+    color: #00aaff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #FFFFFF;
+}
+
+.modal-content h2 {
+    color: #00aaff;
+    border-bottom: 1px solid #005f88;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.modal-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.credits {
+    position: fixed; 
+    bottom: 15px;
+    left: 20px;
+    font-size: 18px; 
+    color: #00ddff; 
+    opacity: 0.7; 
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    z-index: 5; 
+}
