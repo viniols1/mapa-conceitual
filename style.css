@@ -133,8 +133,8 @@ h1 {
     }
 
     .node {
-        position: relative;
-        width: 85%; 
+        position: relative; 
+        width: 85%;
         margin: 15px auto; 
         text-align: center;
         
@@ -149,28 +149,17 @@ h1 {
     }
     
     .credits {
-        position: relative; 
+        position: relative !important;  
         text-align: center;
         width: 90%;
         margin: 50px auto 20px auto; 
-        left: auto;
-        bottom: auto;
+        left: auto !important;         
+        bottom: auto !important;      
         font-size: 11px;
+        z-index: 1 !important;        
     }
 
     .modal-content p {
         font-size: 1em; 
     }
-}
-
-.credits {
-    position: fixed; 
-    bottom: 15px;
-    left: 20px;
-    font-size: 18px; 
-    color: #00ddff; 
-    opacity: 0.7; 
-    font-weight: 300;
-    letter-spacing: 0.5px;
-    z-index: 5; 
 }
