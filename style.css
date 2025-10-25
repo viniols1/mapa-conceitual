@@ -113,6 +113,18 @@ h1 {
     line-height: 1.6;
 }
 
+.credits {
+    position: fixed; 
+    bottom: 15px;
+    left: 20px;
+    font-size: 18px; 
+    color: #00ddff; 
+    opacity: 0.7; 
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    z-index: 5; 
+}
+
 @media (max-width: 768px) {
 
     body {
