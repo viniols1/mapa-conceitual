@@ -125,7 +125,7 @@ h1 {
     z-index: 5; 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
 
     body {
         overflow-y: auto;
