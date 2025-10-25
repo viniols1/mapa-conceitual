@@ -149,7 +149,7 @@ h1 {
     }
     
     .credits {
-        position: footer; 
+        position: relative; 
         text-align: center;
         width: 90%;
         margin: 50px auto 20px auto; 
